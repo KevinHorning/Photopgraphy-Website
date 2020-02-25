@@ -1,5 +1,5 @@
 body {
-    background-image: url("background.jpg");
+    background-image: url("background.png");
 }
 
 h1, h2, h3 {
@@ -19,13 +19,33 @@ h1, h2, h3 {
     background-color: blue;
 }
 
-#images { 
-    margin-top: 50px;
+#coverImages {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 300px;
+    overflow: hidden;
 }
 
-.categoryIMG {
+.hi {
+    height: 550px;
+margin-left: auto;
+margin-right: auto;
+       border: 10px solid white;
+    border-radius: 10%;
+}
+
+.categoryIMG { 
     height: 350px;
     width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+ 
 }
 
 .category {
