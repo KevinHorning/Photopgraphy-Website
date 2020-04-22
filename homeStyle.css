@@ -43,6 +43,10 @@ a {
     color: black;
 }
 
+a:hover {
+    color: grey;
+}
+
 #slideContainer{
     width: 100%;
     height: 43.5vw;

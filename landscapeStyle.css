@@ -53,7 +53,7 @@ a:hover {
     clear: both;
     top: 0vw;
     height: 20vw;
-    border: solid #ffe6e0 1px;
+    border: solid black 1px;
 }
 
 #pageHeaderInnerArea {
@@ -65,7 +65,7 @@ a:hover {
     margin-right: auto;
     margin-top: 5vw;
     font-family: Verdana, sans-serif;
-    border: solid #ffe6e0 1px;
+    border: solid black 1px;
 }
 
 #pageTitle {
@@ -80,144 +80,4 @@ a:hover {
     text-align: center;
     font-size: 1.2vw;
     margin-left: 2vw;
-}
-
-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2vw;
-    margin-bottom: -4vw;
-}
-
-#galleryArea {
-    clear: both;
-    margin-top: 5vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1vw;
-    width: 80%;
-}
-
-.imgSection {
-    position: relative;
-    display: inline-block;
-}
-
-img {
-    padding: 0.5vw;
-}
-
-.img0 {
-    height: 35vw;
-    width: 20vw;
-}
-
-.img1 {
-    height: 25vw;
-    width: 30vw;
-    vertical-align: top;
-}
-
-.img2 {
-    height: 35vw;
-    width: 25.3vw;
-    vertical-align: top;
-}
-
-.img3 {
-    height: 20vw;
-    width: 20vw;
-}
-
-.img4 {
-    height: 30vw;
-    width: 26vw;
-    margin-top: -10vw;
-}
-
-.img5 {
-    height: 20vw;
-    width: 29.3vw;
-}
-
-.imgBox1 {
-    float: left;
-    width: 37vw;
-    height: 40.3vw;
-}
-
-.img6 {
-    height: 20vw;
-    width: 36vw;
-    vertical-align: top;
-}
-
-.img7 {
-    height: 29vw;
-    width: 18vw;
-}
-
-.imgBox2 {
-    float: right;
-    padding-right: 1vw;
-    height: 29vw;
-    width: 17vw;
-}
-
-.img8 {
-    height: 13.9vw;
-    width: 17vw;
-}
-
-.img9 {
-    height: 13.9vw;
-    width: 17vw; 
-}
-
-.img10 {
-    float: right;
-    padding-right: 1vw;
-    height: 50vw;
-    width: 40vw;
-}
-
-#link {
-    display: block;
-    clear: both;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8vw;
-}
-
-#linkToTop {
-    display: block;
-    clear: both;
-    text-align: center;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-    font-size: 1.5vw;
-}
-
-#footer {
-    background-color: #FE6D73;
-    width: 100%;
-    overflow: auto;    
-}
-
-#connect {
-    float: left;
-    width: 49.999%;
-    text-align: center;
-}
-
-#creators {
-    float: right;
-    width: 50%;
-    text-align: center;
-}
-
-#footer h2 {
-    text-decoration: underline;
 }
