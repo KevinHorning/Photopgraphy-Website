@@ -5,16 +5,20 @@
 </head>
 <body>
     <div id = "display1">
-        <h1> RG SHOTZ </h1>
-        <div id = "tabArea">
-            <table id = "tabTable">
+        <div id = "tabAreaLeft">
+            <table>
                 <tr>
-                    <td class = "tab"> <a href = "portraits.html"> PORTRAITS </a> </td>
-                    <td class = "tab"> <a href = "landscapes.html"> LANDSCAPE </a> </td>
-                    <td class = "tab"> <a href = "collage.html"> COLLAGE </a> </td>
+                    <td class = "tab"> <a href = "portrait.html"> PORTRAIT </a> </td>
+                    <td class = "tab"> <a href = "landscape.html"> LANDSCAPE </a> </td>
+                </tr>
+            </table>
+        </div>
+        <h1 id = "title"> <a href = "home.html"> RG SHOTZ </a> </h1>
+        <div id = "tabAreaRight">
+            <table>
+                <tr>
                     <td class = "tab"> <a href = "#display2"> ABOUT </a> </td>
                     <td class = "tab"> <a href = "#display3"> CONTACT </a> </td>
-                    <td class = "tab"> <a href = "..."> LOGOUT </a> </td>
                 </tr>
             </table>
         </div>
@@ -43,26 +47,23 @@
         <div id = "contactForm">
             <h3> Contact if you have money, images needing to be taken, or questions </h3>    
             
-            <form id = "form" method="post">
-                <div id = "labels">
-                    <p> Name: </p>
-                    <p> Email: </p>
-                    <p> Description: </p>
-                </div>
+            <div id = "labels">
+                <p> Name: </p>
+                <p> Email: </p>
+                <p> Description: </p>
+            </div>
             
-                <div id = "inputs">
-                    <input type: = "text" name = "name" placeholder = "Name">
-                    <br/>
-                    <input type: = "text" name = "email" placeholder = "Email">
-                    <br/>
-                    <textarea rows = "4" cols = "38" placeholder = "Need Shotz"></textarea>
-                    <br>
-                    <input type = "submit" value = "Submit">
-                    <br/>
-                </div>
+            <form id = "inputs" action="mailto:riteshbish540@gmail.com" method="post" enctype="text/plain">
+                <input type: = "text" name = "name" placeholder = "Name">
+                <br/>
+                <input type: = "text" name = "email" placeholder = "Email">
+                <br/>
+                <textarea form = "inputs" placeholder = "Need Shotz"></textarea>
+                <br>
+                <input type = "submit" value = "Send">
+                <br/>
             </form>
-        
-        </div>
+        </div>    
         <div id = "social">
             <h3> Also connect on the socials </h3>
             <p> Instagram: </p>
