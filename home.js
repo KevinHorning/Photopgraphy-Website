@@ -1,5 +1,5 @@
 var vertSlides = ["imgVert1.jpg", "imgVert2.jpg", "imgVert3.jpg"];
-var horzSlides = ["imgHorz3.jpg", "imgHorz2.jpg", "imgHorz1.jpg"];
+var horzSlides = ["photos/imgHorz3.jpg", "photos/imgHorz2.jpg", "photos/imgHorz1.jpg"];
 var slides;
 var slideCurrentIndex = 0;
 var slide = document.getElementById("slide");

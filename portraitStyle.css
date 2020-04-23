@@ -167,18 +167,13 @@ img {
 }
 
 .img8 {
-    height: 13.9vw;
+    height: 28.9vw;
     width: 17vw;
 }
 
 .img9 {
-    height: 13.9vw;
-    width: 17vw; 
-}
-
-.img10 {
-    float: right;
-    padding-right: 1vw;
+    float: left;
+    padding-right: .7vw;
     height: 50vw;
     width: 40vw;
 }
