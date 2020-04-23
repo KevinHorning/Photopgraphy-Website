@@ -56,6 +56,10 @@ function shuffle(){
 }
 
 
+/*
+Christauns modal code
+*/
+
 // Get the modal
 var modal = document.getElementById("myModal");
 

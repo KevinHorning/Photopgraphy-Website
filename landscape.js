@@ -38,3 +38,49 @@ function shuffle(){
         imagesClass9.push(selectedArray[9][sectionNumber]);
     }
 }
+
+/*
+Christauns modal code
+*/
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName("myImg");
+//img += document.getElementsByClassName("img2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var which=0;
+for(i=0;i< img.length;i++){    
+    img[i].onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+	    which=this.alt;
+        if(which<img.length) 
+            Nextt.src=img[which].src;
+	    Prevv.src=img[which-2].src;
+    }
+}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+   modal.style.display = "none";
+}
+var Nextt = document.getElementsByClassName("Next")[0];
+Nextt.onclick = function() { 
+	
+	var img = document.getElementsByClassName("myImg");
+	triggerEvent(img[which],'click');
+}
+var Prevv= document.getElementsByClassName("Prev")[0];
+Prevv.onclick = function() { 
+	
+	var img = document.getElementsByClassName("myImg");
+	triggerEvent(img[which-2],'click');
+}
+
+function triggerEvent( elem, event ) {
+  var clickEvent = new Event( event ); // Create the event.
+  elem.dispatchEvent( clickEvent );    // Dispatch the event.
+}
