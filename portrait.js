@@ -1,13 +1,14 @@
 // images to be used during shuffle for each class/size of image container
-var imagesClass0 = ["photos/dani.jpg", "photos/port3.jpg"];
+// make sure these arrays contain all the images from the html file
+var imagesClass0 = ["photos/dani.jpg", "photos/port.jpg"];
 var imagesClass1 = ["photos/devin.png", "photos/daniel2.jpeg"];
 var imagesClass2 = ["photos/grad2.png", "photos/duo.jpeg"];
-var imagesClass3 = ["photos/grad.jpg", "photos/daniel2.jpeg"];
+var imagesClass3 = ["photos/grad.jpg", "photos/port4.jpeg"];
 var imagesClass4 = ["photos/TJ.jpeg", "photos/tt.jpg"];
-var imagesClass5 = ["photos/mikey.jpeg", "photos/wind.jpeg"];
+var imagesClass5 = ["photos/mikey.jpeg", "photos/clara.jpeg"];
 var imagesClass6 = ["photos/wind.jpeg", "photos/Jas.jpg"];
-var imagesClass7 = ["photos/dani2.jpg", "photos/imgAbout.jpg"];
-var imagesClass8 = ["photos/liz.jpg", "photos/port.jpg"];
+var imagesClass7 = ["photos/dani2.jpg", "photos/pew.jpg"];
+var imagesClass8 = ["photos/liz.jpg", "photos/port3.jpg"];
 var imagesClass9 = ["photos/imgAbout.jpg", "photos/port2.jpg"];
 
 var imageArray = [imagesClass0, imagesClass1, imagesClass2, imagesClass3, imagesClass4, imagesClass5, imagesClass6, imagesClass7, imagesClass8, imagesClass9];
@@ -100,4 +101,4 @@ Prevv.onclick = function() {
 function triggerEvent( elem, event ) {
   var clickEvent = new Event( event ); // Create the event.
   elem.dispatchEvent( clickEvent );    // Dispatch the event.
-}
+}   

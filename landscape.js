@@ -1,30 +1,46 @@
+// images to be used during shuffle for each class/size of image container
+// make sure these arrays contain all the images from the html file
 var imagesClass0 = ["photos/BOA.jpg"];
 var imagesClass1 = ["photos/imgHorz1.JPG"];
 var imagesClass2 = ["photos/atlskyline.jpg"];
 var imagesClass3 = ["photos/25park.jpg"];
 var imagesClass4 = ["photos/teleskyline.jpg"];
 var imagesClass5 = ["photos/moon.jpg"];
-var imagesClass6 = ["imgHorz2.JPG"];
-var imagesClass7 = ["imgHorz2.JPG"];
-var imagesClass8 = ["imgHorz2.JPG"];
-var imagesClass9 = ["imgHorz2.JPG"];
+var imagesClass6 = ["photos/fog.JPG"];
+var imagesClass7 = ["photos/skyview.JPG"];
+var imagesClass8 = ["photos/bloom.JPG"];
+var imagesClass9 = ["photos/bldg.JPG"];
 var imageArray = [imagesClass0, imagesClass1, imagesClass2, imagesClass3, imagesClass4, imagesClass5, imagesClass6, imagesClass7, imagesClass8, imagesClass9];
+
+// listener that starts the shuffle
 document.getElementById("shuffle").addEventListener("click", function(){ shuffle(); } );
 
 function shuffle(){    
+    // number of Sections of images (11 images in a section)
     numberOfSections = document.getElementsByClassName("imgSection").length;
+
+    // array to save the images randomly selected from the arrays
     selectedArray = [[], [], [], [], [], [], [], [], [], []];
+
+    // for loops that make the source of each image a file from that container's array of images
     for (sectionNumber = 0; sectionNumber < numberOfSections; sectionNumber++){
         for (imgClass = 0; imgClass < 10; imgClass++){  
+
+            // image selected randomly from image array for that container
             randomIndex = Math.random() * imageArray[imgClass].length | 0;
             selectedImage = imageArray[imgClass][randomIndex];
             selectedArray[imgClass].push(selectedImage);
+            
+            // selected image is removed from the image array so it is not reused
             imageArray[imgClass].splice(randomIndex, 1);
+
+            // gets the id number to put the image source into
             containerIndex = imgClass + (sectionNumber * 10);
             document.getElementById("img" + containerIndex).src = selectedImage;
         }
     }
 
+    // after shuffle is complete, all selected images are returned to their arrays for use in the next shuffle
     for (sectionNumber = 0; sectionNumber < numberOfSections; sectionNumber++){
         imagesClass0.push(selectedArray[0][sectionNumber]);
         imagesClass1.push(selectedArray[1][sectionNumber]);
@@ -83,4 +99,4 @@ Prevv.onclick = function() {
 function triggerEvent( elem, event ) {
   var clickEvent = new Event( event ); // Create the event.
   elem.dispatchEvent( clickEvent );    // Dispatch the event.
-}
+}   
