@@ -45,17 +45,20 @@
             <div id = "labels">
                 <p> Name: </p>
                 <p> Email: </p>
+                <p> Subject: </p>
                 <p> Description: </p>
             </div>
             
-            <form id = "inputs" action="mailto:riteshbish540@gmail.com" method="post" enctype="text/plain">
-                <input type: = "text" name = "name" placeholder = "Name">
+            <form id = "inputs">
+                <input type: = "text" name = "name" id = "name" placeholder = "Name">
                 <br/>
-                <input type: = "text" name = "email" placeholder = "Email">
+                <input type: = "text" name = "email" id = "email" placeholder = "Email">
                 <br/>
-                <textarea form = "inputs" placeholder = "Need Shotz"></textarea>
+                <input type: = "text" name = "subject" id = "subject" placeholder = "Photo Shoot">
+                <br/>
+                <textarea id = "description" placeholder = "Need Shotz"></textarea>
                 <br>
-                <input type = "submit" value = "Send">
+                <input type = "submit" id = "submit" value = "Send">
                 <br/>
             </form>
         </div>    
