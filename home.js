@@ -63,10 +63,12 @@ email section
 
 senderName = document.getElementById("name");
 email = document.getElementById("email");
+subject = document.getElementById("subject");
 description = document.getElementById("description");
 
 senderName.value = localStorage.getItem("name");   
 email.value = localStorage.getItem("email");   
+subject.value = localStorage.getItem("subject");
 description.innerHTML = localStorage.getItem("description");   
 
 if (localStorage.getItem("name") == null)
@@ -74,6 +76,9 @@ if (localStorage.getItem("name") == null)
 
 if (localStorage.getItem("email") == null)
     localStorage.setItem("email", "");
+
+if (localStorage.getItem("subject") == null)
+    localStorage.setItem("subject", "");
 
 if (localStorage.getItem("description") == null)
     localStorage.setItem("description", "");
@@ -92,6 +97,13 @@ email.onkeypress = function(e) {
         localStorage.setItem("email", localStorage.getItem("email") + String.fromCharCode(charCode));
 };
 
+subject.onkeypress = function(e) {
+    e = e || window.event;
+    var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
+    if (charCode) 
+        localStorage.setItem("subject", localStorage.getItem("subject") + String.fromCharCode(charCode));
+};
+
 description.onkeypress = function(e) {
     e = e || window.event;
     var charCode = (typeof e.which == "number") ? e.which : e.keyCode;
@@ -101,5 +113,5 @@ description.onkeypress = function(e) {
                     
 document.getElementById("submit").addEventListener("click", function(){
     body = localStorage.getItem("description") + "%0D%0A%0D%0AName: " + localStorage.getItem("name") + "%0D%0AContact Email: " + localStorage.getItem("email");
-    window.open("mailto:riteshbish540@gmail.com?subject=WebsiteQuery&body=" + body);
+    window.open("mailto:riteshbish540@gmail.com?subject=" + localStorage.getItem("subject") + "&body=" + body);
 });
