@@ -122,66 +122,76 @@ a:hover {
 }
 
 #display3 {
-    height: 25vw;
+    height: 28vw;
     width: 100%;
-    background-color: #FE6D73
+    clear: both;
+    background-color: #FE6D73;
+    margin-bottom: 0vw;
 }
 
-#contactForm{
-    position: relative;
-    top: 4vw;
-    left: 15vw;
-    width: 35%;
+.column {
+    float: left;
+    padding: 4vw 0vw 0vw 8vw;
 }
 
-#contactForm h3 {
-    font-size: 1.8vw;
+#contactFormArea {
+    width: 34%;
 }
 
-#labels {
-    float: left;   
-    width: 30%;    
-    text-align: right;
+#contactFormArea h3 {
+    font-size: 1.5vw;
 }
 
-#inputs {
-    float: right;
-    width: 69%;
-    align-self: left;
+.formRow {
+    margin: .9vw;
+    clear: both;
 }
 
-#contactForm p {
+.labels {
+    display: inline-block;
+    width: 18%;
+    padding-top: .2vw;
+    vertical-align: top;
+}
+
+label {
     font-size: 1vw;
-    margin: 1vw;
 }
 
 input {
-    margin: .6vw;
     height: 1vw;
     font-size: .9vw;
-}
-
-input[type=submit] {
-    height: 1.5vw;
+    padding: 0vw;
 }
 
 textarea {
-    margin: .6vw;
-    height: 4vw;
+    margin: .1vw;
+    height: 3vw;
     width: 20vw;
     font-size: .9vw;
 }
 
-#social {
-    float: right;
-    width: 40%;
-    margin-top: -17.75vw;
-}
-
-#social h3 {
-    font-size: 1.8vw;
-}
-
-#social p {
+input[type=submit] {
+    margin-top: .5vw;
+    height: 1.5vw;
+    width: 4vw;
     font-size: 1vw;
+}
+
+#social {
+    width: 20%;
+}
+
+#social h3, #creators h3 {
+    font-size: 1.5vw;
+}
+
+#social p, #creators p {
+    display: block;
+    margin-top: 2.5vw;
+    font-size: 1vw;
+}
+
+#creators {
+    width: 15%;
 }
