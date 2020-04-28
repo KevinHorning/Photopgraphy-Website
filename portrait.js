@@ -3,9 +3,9 @@
 var imagesClass0 = ["photos/dani.jpg", "photos/port.jpg"];
 var imagesClass1 = ["photos/devin.png", "photos/daniel2.jpeg"];
 var imagesClass2 = ["photos/grad2.png", "photos/duo.jpeg"];
-var imagesClass3 = ["photos/grad.jpg", "photos/port4.jpeg"];
+var imagesClass3 = ["photos/grad.jpg", "photos/port4.jpg"];
 var imagesClass4 = ["photos/TJ.jpeg", "photos/tt.jpg"];
-var imagesClass5 = ["photos/mikey.jpeg", "photos/clara.jpeg"];
+var imagesClass5 = ["photos/mikey.jpeg", "photos/clara.jpg"];
 var imagesClass6 = ["photos/wind.jpeg", "photos/Jas.jpg"];
 var imagesClass7 = ["photos/dani2.jpg", "photos/pew.jpg"];
 var imagesClass8 = ["photos/liz.jpg", "photos/port3.jpg"];
