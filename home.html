@@ -40,37 +40,45 @@
     </div>
 
     <div id = "display3">
-        <div id = "contactForm">
-            <h3> Contact if you have money, questions, or want photos taken </h3>    
-            <div id = "labels">
-                <p> Name: </p>
-                <p> Email: </p>
-                <p> Subject: </p>
-                <p> Description: </p>
-            </div>
-            
+        <div id = "contactFormArea" class = "column">
+            <h3> Contact if you have questions or want photos taken </h3>    
             <form id = "inputs">
-                <input type: = "text" name = "name" id = "name" placeholder = "Name">
-                <br/>
-                <input type: = "text" name = "email" id = "email" placeholder = "Email">
-                <br/>
-                <input type: = "text" name = "subject" id = "subject" placeholder = "Photo Shoot">
-                <br/>
-                <textarea id = "description" placeholder = "Need Shotz"></textarea>
-                <br>
-                <input type = "submit" id = "submit" value = "Send">
-                <br/>
+                <div class = "formRow">
+                    <div class = "labels"> <label> Name: </label> </div>
+                    <input type: = "text" id = "name" placeholder = "Name">
+                </div>
+                <div class = "formRow">
+                    <div class = "labels"> <label> Email: </label> </div>
+                    <input type: = "text" id = "email" placeholder = "Email">
+                </div>
+                <div class = "formRow">
+                    <div class = "labels"> <label> Subject: </label> </div>
+                    <input type: = "text" id = "subject" placeholder = "Photo Shoot">
+                </div>
+                <div class = "formRow">
+                    <div class = "labels"> <label> Description: </label> </div>
+                    <textarea id = "description" placeholder = "Need Shotz"></textarea>
+                </div>
+                <div class = "formRow">
+                    <div class = "labels"> <label></label> </div>
+                    <input type = "submit" id = "submit" value = "Send">
+                </div>
             </form>
         </div>    
-        <div id = "social">
+        <div id = "social" class = "column">
             <h3> Also connect on the socials </h3>
             <p> Instagram: instagram.com/riiteeshg </p>
             <p> Twitter: twitter.com/riiteshg </p>
             <p> Facebook: twitter.com/riiteshg </p>
             <p> LinkedIn: twitter.com/riiteshg </p>
-            <p> MySpace: myspace.com/riiteshg </p>
+        </div>
+        <div id = "creators" class = "column">
+            <h3> Website Creators </h3>
+            <p> Ritesh G: Developer </p>
+            <p> Kevin Horning: Developer </p>
+            <p> Chrishaun: Developer </p>
+            <p> Meagan Hall: Designer </p>
         </div>
     </div>
-
 </body>
 <script type="text/javascript" src = "home.js"> </script>
