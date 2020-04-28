@@ -66,10 +66,14 @@ email = document.getElementById("email");
 subject = document.getElementById("subject");
 description = document.getElementById("description");
 
-senderName.value = localStorage.getItem("name");   
-email.value = localStorage.getItem("email");   
-subject.value = localStorage.getItem("subject");
-description.innerHTML = localStorage.getItem("description");   
+if (localStorage.getItem("name") !== null)
+    senderName.value = localStorage.getItem("name");   
+if (localStorage.getItem("email") !== null)
+    email.value = localStorage.getItem("email");   
+if (localStorage.getItem("subject") !== null)
+    subject.value = localStorage.getItem("subject");
+if (localStorage.getItem("description") !== null)
+    description.innerHTML = localStorage.getItem("description");   
 
 if (localStorage.getItem("name") == null)
     localStorage.setItem("name", "");
@@ -114,4 +118,9 @@ description.onkeypress = function(e) {
 document.getElementById("submit").addEventListener("click", function(){
     body = localStorage.getItem("description") + "%0D%0A%0D%0AName: " + localStorage.getItem("name") + "%0D%0AContact Email: " + localStorage.getItem("email");
     window.open("mailto:riteshbish540@gmail.com?subject=" + localStorage.getItem("subject") + "&body=" + body);
+});
+
+document.getElementById("reset").addEventListener("click", function(){
+    description.value = "";
+    localStorage.clear();
 });
